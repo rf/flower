@@ -18,6 +18,18 @@ The returned object has a method `cancel()` which can be used to cancel the
 operation. Each iteration is run on the next tick of the event loop, allowing
 UI events to be processed inbetween iterations.
 
+```javascript
+var flower = require('russfrank/flower');
+
+var each = flower.each([1, 2, 3, 4], function (item, index, done) {
+  done();
+}, function (err) {
+  // err will be Error("ForEach operation cancelled");
+});
+
+setTimeout(function () { each.cancel(); }, 1);
+```
+
 ## test
 
     $ mocha
