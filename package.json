@@ -1,0 +1,17 @@
+{
+  "name": "flower",
+  "repo": "russfrank/flower",
+  "version": "0.0.1",
+  "author": "Russ Frank",
+  "license": "MIT",
+  "description": "simple flow control",
+  "main": "flower",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "guid": "xxxxxxx-xxxxxx-xxxxxx",
+  "minsdk": "2.0.0",
+  "scripts": [
+    "flower.js"
+  ]
+}
